@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlanzMobil | Професійна виїзна чистка авто</title>
+    <style>
+      :root {
+        --primary-color: #007bff; /* Автомобільний синій */
+        --dark-color: #1a1a1a;
+        --light-color: #f8f9fa;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Roboto, sans-serif;
+      }
+
+      body {
+        line-height: 1.6;
+        background-color: var(--light-color);
+        color: #333;
+      }
+
+      /* Header & Nav */
+      header {
+        background: rgba(26, 26, 26, 0.95);
+        color: white;
+        padding: 15px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--primary-color);
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin-left: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        transition: 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: var(--primary-color);
+      }
+
+      /* Hero Section */
+      #hero {
+        height: 80vh;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1600&q=80");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding-top: 60px;
+      }
+
+      .cta-button {
+        background: var(--primary-color);
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 20px;
+        display: inline-block;
+        transition: transform 0.2s;
+      }
+
+      .cta-button:hover {
+        transform: scale(1.05);
+      }
+
+      /* Sections */
+      section {
+        padding: 80px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+        position: relative;
+      }
+
+      h2::after {
+        content: "";
+        width: 50px;
+        height: 3px;
+        background: var(--primary-color);
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      /* Services Grid */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .price {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--primary-color);
+        display: block;
+        margin: 15px 0;
+      }
+
+      /* Info Section */
+      .info-box {
+        background: #e9ecef;
+        padding: 40px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+        }
+        nav ul {
+          margin-top: 15px;
+        }
+        #hero h1 {
+          font-size: 2rem;
+        }
+        section {
+          padding: 50px 20px;
+        }
+      }
+
+      footer {
+        background: var(--dark-color);
+        color: white;
+        text-align: center;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">GLANZ<span>MOBIL</span></div>
+        <ul>
+          <li><a href="#hero">Start</a></li>
+          <li><a href="#services">Leistungen</a></li>
+          <li><a href="#vorteile">Vorteile</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="hero">
+      <h1>Ihr Auto glänzt – wir kommen zu Ihnen!</h1>
+      <p>Professionelle Autoaufbereitung vor Ort in Ihrer Stadt.</p>
+      <a href="tel:+49123456789" class="cta-button">Jetzt anrufen</a>
+    </div>
+
+    <section id="services">
+      <h2>Unsere Leistungen</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Innenreinigung</h3>
+          <p>
+            Staubsaugen, Polsterreinigung, Cockpitpflege und Scheibenreinigung.
+          </p>
+          <span class="price">ab 59 €</span>
+        </div>
+        <div class="card">
+          <h3>Außenreinigung</h3>
+          <p>Handwäsche, Felgenreinigung und sanfte Trocknung.</p>
+          <span class="price">ab 39 €</span>
+        </div>
+        <div class="card">
+          <h3>Premium Paket</h3>
+          <p>Komplette Innen- und Außenpflege inklusive Lackversiegelung.</p>
+          <span class="price">ab 129 €</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="vorteile">
+      <div class="info-box">
+        <h2>Warum GlanzMobil?</h2>
+        <p>
+          ✅ <strong>Wir kommen zu Ihnen:</strong> Egal ob nach Hause oder ins
+          Büro.<br />
+          ✅ <strong>Zeitersparnis:</strong> Keine Fahrt zur Waschanlage
+          nötig.<br />
+          ✅ <strong>Profi-Equipment:</strong> Wir bringen alles Notwendige mit
+          (Wasser & Strom autark).
+        </p>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt & Buchung</h2>
+      <div style="text-align: center">
+        <p>Rufen Sie uns an oder schreiben Sie per WhatsApp:</p>
+        <h3 style="margin: 20px 0">+49 123 456 789</h3>
+        <p>E-Mail: info@glanzmobil.de</p>
+        <p>Öffnungszeiten: Mo - Sa: 08:00 - 18:00 Uhr</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2026 GlanzMobil - Mobile Autoaufbereitung. <br />
+        <small>Impressum | Datenschutz</small>
+      </p>
+    </footer>
+  </body>
+</html>
