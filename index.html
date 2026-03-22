@@ -145,7 +145,22 @@
         font-family: "Roboto Condensed", sans-serif;
         font-size: 25px;
       }
-
+      .job-images {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+      }
+      @media screen and (min-width: 320px) and (max-width: 1200px) {
+        .job-images {
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+        }
+      }
+      img {
+        display: block;
+        border-radius: 10px;
+      }
       /* Services Grid */
       .grid {
         display: grid;
@@ -217,8 +232,8 @@
         </div>
         <ul>
           <li><a href="#hero">Start</a></li>
-          <li><a href="#workflow">Leistungen</a></li>
-          <li><a href="#vorteile">Vorteile</a></li>
+          <li><a href="#workflow">Info</a></li>
+          <li><a href="#vorteile">Warum wir?</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
         </ul>
       </nav>
@@ -270,6 +285,17 @@
     </section>
     <section id="services">
       <h2>Unsere Leistungen</h2>
+      <ul class="job-images">
+        <li>
+          <img src="./vacuum.jpeg" alt="tablet" width="370" height="294" />
+        </li>
+        <li>
+          <img src="./polished.jpeg" alt="tablet" width="370" height="294" />
+        </li>
+        <li>
+          <img src="./vehicle.jpeg" alt="tablet" width="370" height="294" />
+        </li>
+      </ul>
       <div class="grid">
         <div class="card">
           <h3>Innenreinigung</h3>
@@ -380,6 +406,22 @@
       <div style="text-align: center">
         <p>Rufen Sie uns an oder schreiben Sie</p>
         <p>44534 Lünen (+100km)</p>
+        <!-- <ul>
+          <li>
+            <a href="#" class="social-link">
+              <svg class="svg-icon-link">
+                <use href="./tiktok.svg"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <svg class="svg-icon-link">
+                <use href="./whatsapp.svg"></use>
+              </svg>
+            </a>
+          </li>
+        </ul> -->
         <h3 style="margin: 20px 0">
           <a href="tel:+4917620841224" class="find-us-link">+49 176 20841224</a>
         </h3>
